@@ -122,3 +122,4 @@ C:\Users\Public\c#\aulaApiBanco\LojaApi\bin\Debug\net10.0\ru\Microsoft.CodeAnaly
 C:\Users\Public\c#\aulaApiBanco\LojaApi\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Public\c#\aulaApiBanco\LojaApi\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Public\c#\aulaApiBanco\LojaApi\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Public\c#\aulaApiBanco\LojaApi\obj\Debug\net10.0\LojaApi.sourcelink.json
