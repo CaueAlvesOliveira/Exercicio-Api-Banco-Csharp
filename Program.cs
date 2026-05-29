@@ -6,6 +6,17 @@ using Microsoft.OpenApi;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000") // URL do seu React
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(options =>
 options.UseMySql(
@@ -65,6 +76,7 @@ ValidateAudience = false
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+app.UseCors("AllowReactApp");
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseAuthentication();
